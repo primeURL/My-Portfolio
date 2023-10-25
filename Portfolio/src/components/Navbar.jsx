@@ -7,14 +7,14 @@ const Navbar = () => {
           Port
           <span className='text-emerald-600'>Folio</span>
         </h2>
-        <div className='flex flex-col sm:flex-row gap-x-3 '>
+        <div className='flex flex-col sm:flex-row gap-x-5 '>
           {links.map((link) => {
             const { id, href, text } = link;
             return (
               <a
                 key={id}
                 href={href}
-                className='capitalize text-lg py-2 tracking-wide hover:text-emerald-600 duration-300'
+                className='capitalize text-lg py-2 tracking-wide hover:text-emerald-800 duration-300'
               >
                 {text}
               </a>
